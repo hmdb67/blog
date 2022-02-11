@@ -14,7 +14,7 @@ body,h1,h2,h3,h4,h5 {
 	grid-template-rows: 140px 300px 60px;
     grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
-      "main main main main main sd sd sd"
+      "main main main main main main sd sd"
       "ft ft ft ft ft ft ft ft";
     border: 2px solid black;
     padding: 5px;
@@ -22,14 +22,21 @@ body,h1,h2,h3,h4,h5 {
   	row-gap: 10px;    
   }
     
-    .box{
+    .header-box{
     	/* border: 10px solid black; */
     	background: #F8FA9D;
         padding: 5px;
         text-align: center; 
         /* margin: 5px;   */
     } 
-    
+    .sidebar-box{
+    	/* border: 10px solid black; */
+    	background: #F8FA9D;
+        padding: 5px;
+        text-align: center;
+        min-width: 200px; 
+        /* margin: 5px;   */
+    } 
 	.header {
   		grid-area: hd;
        	border: 1px solid red;

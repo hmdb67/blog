@@ -6,3 +6,44 @@ body,h1,h2,h3,h4,h5 {
 .page_header{
     color: black;
 }
+
+.container{
+    /* Step 1: Set display to grid */
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 100px 300px 60px;
+    grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "sd main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+    border: 2px solid black;
+    padding: 5px;
+  	column-gap: 10px;
+  	row-gap: 10px;    
+  }
+    
+    /* .box{
+    	border: 1px solid black;
+    	background: #F8FA9D;
+      	padding: 5px;
+    } */
+    
+	.header {
+  		grid-area: hd;
+       	border: 1px solid red;
+	}
+
+    .footer {
+  		grid-area: ft;
+       	border: 1px solid blue;
+	}
+
+    .sidebar {
+  		grid-area: sd;
+       	border: 1px solid green;
+	}    
+    
+ 	.content{
+      	grid-area: main;
+       	border: 1px solid purple;
+  }

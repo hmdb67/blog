@@ -16,7 +16,7 @@ h5 {
   /* Step 1: Set display to grid */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 600pxpx 60px;
+  grid-template-rows: 1fr 60px;
   grid-template-areas:
     "main main main main main main sd sd"
     "ft ft ft ft ft ft ft ft";

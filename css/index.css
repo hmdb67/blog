@@ -1,58 +1,64 @@
-
-body,h1,h2,h3,h4,h5 {
-    font-family: "Comic Sans MS", sans-serif
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Comic Sans MS", sans-serif;
 }
 
-.page_header{
-    color: black;
+.page_header {
+  color: black;
+  text-align: center;
 }
 
-.container{
-    /* Step 1: Set display to grid */
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 140px 300px 60px;
-    grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "main main main main main main sd sd"
-      "ft ft ft ft ft ft ft ft";
-    border: 2px solid black;
-    padding: 5px;
-  	column-gap: 10px;
-  	row-gap: 10px;    
-  }
-    
-    .header-box{
-    	/* border: 10px solid black; */
-    	background: #F8FA9D;
-        padding: 5px;
-        text-align: center; 
-        /* margin: 5px;   */
-    } 
-    .sidebar-box{
-    	/* border: 10px solid black; */
-    	background: #F8FA9D;
-        padding: 5px;
-        text-align: center;
-        min-width: 200px; 
-        /* margin: 5px;   */
-    } 
-	.header {
-  		grid-area: hd;
-       	border: 1px solid red;
-	}
+.container {
+  /* Step 1: Set display to grid */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 600pxpx 60px;
+  grid-template-areas:
+    "main main main main main main sd sd"
+    "ft ft ft ft ft ft ft ft";
+  border: 2px solid black;
+  padding: 5px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
 
-    .footer {
-  		grid-area: ft;
-       	border: 1px solid blue;
-	}
+/* .header-box {
+  background: #f8fa9d;
+  padding: 5px; 
+}*/
 
-    .sidebar {
-  		grid-area: sd;
-       	border: 1px solid green;
-	}    
-    
- 	.content{
-      	grid-area: main;
-       	border: 1px solid purple;
-  }
+.sidebar-box {
+  /* border: 10px solid black; */
+  /* background: #f8fa9d; */
+  padding: 5px;
+  text-align: center;
+  min-width: 200px;
+  /* margin: 5px;   */
+}
+
+/* .header {
+  grid-area: hd;
+  border: 1px solid red;
+} 
+*/
+
+.footer {
+  grid-area: ft;
+  border: 1px solid blue;
+
+}
+
+.sidebar {
+  grid-area: sd;
+  border: 1px solid green;
+}
+
+.blog-entries {
+  grid-area: main;
+  border: 1px solid purple;
+}
+

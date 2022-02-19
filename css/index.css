@@ -13,14 +13,14 @@ h5 {
 }
 
 .grid-container {
-  /* Step 1: Set display to grid */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 120px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 120px;
   grid-template-areas:
-    "main main main main sd sd sd sd"
-    "ft ft ft ft ft ft ft ft";
-  border: 10px solid red;
+    "main"
+    "sd"
+    "ft";
+  border: 5px solid red;
   padding: 5px;
   column-gap: 10px;
   row-gap: 10px;
@@ -42,19 +42,43 @@ h5 {
   border: 10px dotted gray;
 }
 
-.sidebar {
+.sidebar-container {
+  
   grid-area: sd;
   border: 10px dotted green;
+  padding: 10px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 20px;
+  padding: 15px;
+  /* max-height: 600px; */
+
 }
 
 .blog-entries {
   grid-area: main;
   border: 10px dotted purple;
-  min-width: 320px;
+  /* min-width: 320px; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 10px;
+  padding: 15px;
 }
+
+@media(min-width:900px){
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 120px;
+    grid-template-areas:
+      "main main main main sd sd sd sd"
+      "ft ft ft ft ft ft ft ft";
+    border: 5px solid red;
+    padding: 5px;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+}
+
 

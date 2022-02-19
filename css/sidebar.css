@@ -1,7 +1,11 @@
 .intro-card {
     transition: 0.3s;
     max-width: 350px;
-    border: 5px double black;
+    max-height: 600px;
+    box-shadow: 2px 6px 9px 1px #606060;
+    text-align: center;
+
+    /* border: 5px double black; */
   }
   
   .intro-card:hover {
@@ -11,13 +15,5 @@
   .card-container {
     padding: 2px 16px;
   }
-  
-  .introduction-box {
-    /* border: 10px solid fuchsia; */
-    /* background: #f8fa9d; */
-    padding: 10px;
-    text-align: center;
-    min-width: 200px;
-    /* margin: 5px;   */
-  }
+
   

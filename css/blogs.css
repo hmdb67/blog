@@ -1,8 +1,10 @@
 .blog-card {
     transition: 0.3s;
     max-width: 500px;
+    /* max-height: 600px; */
+    box-shadow: 2px 6px 9px 1px #606060;
     /* border: 5px double black; */
-    border: 1px solid black;
+    /* border: 10px solid black; */
     /* background: #f8fa9d; */
     /* padding: 30px; */
     /* text-align: center; */
@@ -17,6 +19,6 @@
 
   .blog-card-container{
     padding: 2px 16px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
   }
  

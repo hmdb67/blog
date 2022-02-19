@@ -7,20 +7,20 @@ h5 {
   font-family: "Comic Sans MS", sans-serif;
 }
 
-.page_header {
+.page-header {
   color: black;
   text-align: center;
 }
 
-.container {
+.grid-container {
   /* Step 1: Set display to grid */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 60px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 120px;
   grid-template-areas:
-    "main main main main main main sd sd"
+    "main main main main sd sd sd sd"
     "ft ft ft ft ft ft ft ft";
-  border: 2px solid black;
+  border: 10px solid red;
   padding: 5px;
   column-gap: 10px;
   row-gap: 10px;
@@ -31,15 +31,6 @@ h5 {
   padding: 5px; 
 }*/
 
-.sidebar-box {
-  /* border: 10px solid black; */
-  /* background: #f8fa9d; */
-  padding: 5px;
-  text-align: center;
-  min-width: 200px;
-  /* margin: 5px;   */
-}
-
 /* .header {
   grid-area: hd;
   border: 1px solid red;
@@ -48,17 +39,22 @@ h5 {
 
 .footer {
   grid-area: ft;
-  border: 1px solid blue;
-
+  border: 10px dotted gray;
 }
 
 .sidebar {
   grid-area: sd;
-  border: 1px solid green;
+  border: 10px dotted green;
 }
 
 .blog-entries {
   grid-area: main;
-  border: 1px solid purple;
+  border: 10px dotted purple;
+  min-width: 320px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
 }
 

@@ -1,0 +1,22 @@
+.blog-card {
+    transition: 0.3s;
+    max-width: 500px;
+    /* border: 5px double black; */
+    border: 1px solid black;
+    /* background: #f8fa9d; */
+    /* padding: 30px; */
+    /* text-align: center; */
+    /* min-width: 200px; */
+
+    /* margin: 5px;   */
+  }
+
+  .blog-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .blog-card-container{
+    padding: 2px 16px;
+    border: 1px solid yellow;
+  }
+ 

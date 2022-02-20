@@ -1,6 +1,6 @@
 .blog-card {
     transition: 0.3s;
-    max-width: 500px;
+    max-width: 600px;
     /* max-height: 600px; */
     box-shadow: 2px 6px 9px 1px #606060;
     /* border: 5px double black; */
@@ -20,5 +20,9 @@
   .blog-card-container{
     padding: 2px 16px;
     /* border: 1px solid yellow; */
+  }
+
+  .blog-main-pic{
+      max-height: 400px;
   }
  

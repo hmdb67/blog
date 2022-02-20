@@ -15,7 +15,7 @@ h5 {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 120px;
+  grid-template-rows: 1fr auto 120px;
   grid-template-areas:
     "main"
     "sd"
@@ -39,13 +39,17 @@ h5 {
 
 .footer {
   grid-area: ft;
-  border: 10px dotted gray;
+  /* border: 5px dotted gray; */
+
+  font-family: "Arial", sans-serif;
+  color: blue;
+  background-color: gray;
 }
 
 .sidebar-container {
   
   grid-area: sd;
-  border: 10px dotted green;
+  border: 5px dotted green;
   padding: 10px;
   /* display: flex; */
   /* flex-direction: column; */
@@ -57,7 +61,7 @@ h5 {
 
 .blog-entries {
   grid-area: main;
-  border: 10px dotted purple;
+  border: 5px dotted purple;
   /* min-width: 320px; */
   display: flex;
   flex-direction: row;
@@ -69,8 +73,8 @@ h5 {
 @media(min-width:900px){
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 120px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 120px;
     grid-template-areas:
       "main main main main sd sd sd sd"
       "ft ft ft ft ft ft ft ft";

@@ -1,6 +1,7 @@
 .blog-card {
     transition: 0.3s;
     max-width: 600px;
+    max-height: 770px;
     /* max-height: 600px; */
     box-shadow: 2px 6px 9px 1px #606060;
     /* border: 5px double black; */
@@ -25,4 +26,72 @@
   .blog-main-pic{
       max-height: 400px;
   }
- 
+
+  .blog-title-sub{
+      padding-left: 15px;
+  }
+
+  .blog-card-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #7CB9E8;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .count {
+
+    padding-right: 20px;
+
+    /* vertical-align: middle; */
+    /* margin-bottom:10px; */
+  }
+
+  .count span {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background-color:#000;
+    color:#fff;
+  }

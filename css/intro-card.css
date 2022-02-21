@@ -5,8 +5,13 @@
     box-shadow: 2px 6px 9px 1px #606060;
     text-align: center;
     margin-bottom: 40px;
+    
   }
   
+  .intro-card img{
+  width: 100%;    
+  }
+
   .intro-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }

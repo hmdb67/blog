@@ -1,3 +1,7 @@
+@import 'intro-card.css';
+@import 'blogs.css';
+@import 'pop-list.css';
+
 body,
 h1,
 h2,
@@ -15,7 +19,7 @@ h5 {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto 120px;
+  grid-template-rows: 1fr auto auto;
   grid-template-areas:
     "main"
     "sd"
@@ -27,9 +31,9 @@ h5 {
 
 .footer {
   grid-area: ft;
-  font-family: "Arial", sans-serif;
+  /* font-family: "Arial", sans-serif; */
   color: darkolivegreen;
-  background-color: rgb(205, 203, 203);
+  /* background-color: rgb(205, 203, 203); */
 }
 
 .sidebar-container {
@@ -63,6 +67,7 @@ h5 {
     column-gap: 10px;
     row-gap: 10px;
   }
+
 }
 
 

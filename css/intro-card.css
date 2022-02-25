@@ -8,6 +8,11 @@
     
   }
   
+  .intro-card-header {
+    padding-top: 5px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  }
+
   .intro-card img{
   width: 100%;    
   }
